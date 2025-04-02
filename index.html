@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Snippet-Saver</title>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+    <header class="container mx-auto px-4 py-16 md:py-20 relative">
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-4 bg-indigo-600/20 px-4 py-1 rounded-full">
+                <span class="text-indigo-300 font-medium">VS Code Extension</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+                <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Snippet Saver</span>
+            </h1>
+            <p class="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto">
+                Snippet-saver is a vscode extension tool, which relies on local storage of your device to provide create, read and delete functionality for code snippets. I have made this extension because I don't trust anyone with my code files and want to keep it in my local machine and I believe you should not trust anyone else for your personal data as well.
+            </p>
+            <div class="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-indigo-900/10 to-transparent opacity-50"></div>
+    </header>
+    
+    <section id="details" class="container mx-auto px-4 py-12 flex flex-col items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 max-w-4xl">
+            <img src="./assets/extension.png" alt="where to find extension" class="rounded-lg shadow-lg border border-gray-700 w-full">
+            <img src="./assets/demo.png" alt="demo for extension" class="rounded-lg shadow-lg border border-gray-700 w-full">
+        </div>
+        <a href="https://marketplace.visualstudio.com/items?itemName=aditya-singh-vats.snippet-saver" 
+           class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+            Download Extension
+        </a>
+        <div class="w-full max-w-4xl mt-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-white">How to use?</h2>
+            <iframe src="./assets/snippet-saver-video.mp4" allow="autoplay" frameborder="0" class="w-full h-[400px] rounded-lg shadow-lg border border-gray-700 mx-auto"></iframe>
+        </div>
+        
+    </section>
+    
+    <section id="features" class="container mx-auto px-12 py-12 bg-gray-800 rounded-lg w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-white">Key Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:bg-gray-650">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-indigo-300 pb-2">Open-Source</h3>
+                    <p>This extension is completely open-source for reviews and contributions.</p>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:bg-gray-650">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-indigo-300 pb-2">Privacy-focused</h3>
+                    <p>The extension works by saving all your files onto your local machine.</p>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:bg-gray-650">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-indigo-300 pb-2">Easy to use</h3>
+                    <p>Extremely easy to use, just select the code and use the default command-palette.</p>
+                </div>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:bg-gray-650">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-indigo-300 pb-2">No Internet</h3>
+                    <p>You don't need internet to use this extension, it works offline for privacy reasons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="mt-auto text-center py-8 text-gray-400 text-sm border-t border-gray-800">
+        <p>&copy; 2025 Snippet-Saver. All rights reserved.</p>
+        <p class="mt-1">Made with ❤️ by <a href="https://aditya.webhop.me/" class="text-indigo-400 hover:text-indigo-300 transition">Aditya</a></p>
+    </footer>
+</body>
+</html>
